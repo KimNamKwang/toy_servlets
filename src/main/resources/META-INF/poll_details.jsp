@@ -15,18 +15,23 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand bg-primary bg-opacity-25">
-      <div class="container">
-        <div class="navbar-nav">
-          <a href="" class="nav-link">Home</a>
-          <a href="" class="nav-link">Feature</a>
-          <a href="" class="nav-link">Pricing</a>
+    <!-- <%@ include file="navbars.jsp"%> -->
+
+    <!-- <% 
+      HashMap<String, String> searchForm = (HashMap<String, String>)request.getAttribute("searchForm");
+      ArrayList<String> tablesListWithString = (ArrayList<String>)request.getAttribute("tablesListWithString");
+     %> -->
+    <div class="container">
+      <div>
+        <div class="button">
+          <button id="prev">Prev</button>
+          <button id="next">Next</button>
         </div>
+        <div id="poll-contents">poll contents</div>
       </div>
-    </nav>
+    </div>
 
-    <hr />
-
+    <script src="../static/javascriptWithPoll.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
