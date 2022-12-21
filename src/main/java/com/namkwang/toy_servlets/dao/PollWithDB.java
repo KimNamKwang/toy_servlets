@@ -6,7 +6,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class SimpleWithDB {
+public class PollWithDB {
     public ArrayList<HashMap> getList() {
         Commons commons = new Commons();
         Statement statement = commons.getStatement();
