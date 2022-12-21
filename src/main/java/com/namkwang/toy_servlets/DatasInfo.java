@@ -26,19 +26,19 @@ public class DatasInfo {
 
     public HashMap<String, Object> getBundleData() {
 
-    DatasInfo datasInfo = new DatasInfo();
-    HashMap<String, String> searchForm = datasInfo.getSearchFormData();
-    ArrayList<MemberBean> tablesListWithString = datasInfo.getTablesListWithString();
+        DatasInfo datasInfo = new DatasInfo();
+        HashMap<String, String> searchForm = datasInfo.getSearchFormData();
+        ArrayList<MemberBean> tablesListWithString = datasInfo.getTablesListWithString();
 
-    HashMap<String, Object> bundlesData = new HashMap<>();
-    bundlesData.put("searchForm", searchForm);
-    bundlesData.put("tablesListWithString", tablesListWithString);
+        HashMap<String, Object> bundlesData = new HashMap<>();
+        bundlesData.put("searchForm", searchForm);
+        bundlesData.put("tablesListWithString", tablesListWithString);
 
-    bundlesData.put("dataWithMemberBean", datasInfo.getDataWithMemberBean());
-    bundlesData.put("dataListWithMemberBean",
-    datasInfo.getDataListWithMemberBean());
+        bundlesData.put("dataWithMemberBean", datasInfo.getDataWithMemberBean());
+        bundlesData.put("dataListWithMemberBean",
+                datasInfo.getDataListWithMemberBean());
 
-    return bundlesData;
+        return bundlesData;
     }
     // <String, String> 자리에 하나는 HaspMap, 하나는 Array를 넣어준다.
 
@@ -72,6 +72,5 @@ public class DatasInfo {
         membersList.add(memberBean03);
         return membersList;
 
-    
     }
 }
